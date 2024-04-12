@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #d2d2d2;
+}
+
+.board{
+
+    background-color: black;
+    height: 100vh;
+    width: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.board-border{
+
+    border: 3px solid black;
+}
+
+.board-inner{
+
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.board-numbers{
+
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    font-size: 19px;
+    color: white;
+}
+
+.board-letters{
+
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    color: white;
+}
+
+.row{
+
+    height: 11vh;
+    display: flex;
+}
+
+.square{
+
+    height: 11vh;
+    width: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover{
+
+    background-color: gray !important;
+    cursor: pointer;
+}
+
+aside{
+
+    position: absolute;
+    left: 0;
+    top: 38%;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: 0.5s ease;
+}
+
+aside:hover{
+
+    transform: scale(1.1);
+}
+
+aside h1{
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 60px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+.references{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    transition: 1.5s ease;
+}
+
+.references.collapsed{
+
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+}
+
+.references p{
+
+    font-size: 30px;
+}
+
+.references i{
+
+    font-size: 70px;
+}
+
+.references i:hover{
+
+    transform: scale(1.1);
+    color: rgb(56, 199, 255);
+}
+
+.references a{
+
+    text-decoration: none;
+    color: black;
+}
